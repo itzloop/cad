@@ -1,0 +1,4 @@
+verilog work "FA_Universal_Structural.v"
+verilog work "Multiplier.v"
+verilog work "Multiplier_Test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

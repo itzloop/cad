@@ -1,0 +1,4 @@
+verilog isim_temp "FA_Universal_Structural.v"
+verilog isim_temp "Multiplier.v"
+verilog isim_temp "Multiplier_Test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

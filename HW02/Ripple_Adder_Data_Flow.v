@@ -26,16 +26,6 @@ module Ripple_Adder_Data_Flow(
 	output cout
     );
 	 
-	 wire cin_wire;
-	 assign cin_wire = 1'b0;
-	 assign cin_wire = 1'b0;
-	 /*always @ ( cin ) begin
-		if (cin == 1'b1)
-			
-		else 
-			assign cin_wire = 1'b0;
-	 end*/
-	 
 	// Inputs
 	FA_Data_Flow fa0 (
 		.a(a[0]), 

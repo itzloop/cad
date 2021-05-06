@@ -24,7 +24,7 @@
 
 
 
-static void Gate_30_0(char *t0)
+static void Gate_38_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -48,21 +48,21 @@ LAB2:    t2 = (t0 + 1048U);
     t3 = *((char **)t2);
     t2 = (t0 + 1208U);
     t4 = *((char **)t2);
-    t2 = (t0 + 4784);
+    t2 = (t0 + 4256);
     t5 = (t2 + 56U);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
-    xsi_vlog_XorGate(t8, 2, t3, t4);
-    t9 = (t0 + 4784);
+    xsi_vlog_AndGate(t8, 2, t3, t4);
+    t9 = (t0 + 4256);
     xsi_driver_vfirst_trans(t9, 0, 0);
-    t10 = (t0 + 4640);
+    t10 = (t0 + 4144);
     *((int *)t10) = 1;
 
 LAB1:    return;
 }
 
-static void Gate_31_1(char *t0)
+static void Gate_39_1(char *t0)
 {
     char *t1;
     char *t2;
@@ -82,25 +82,25 @@ LAB0:    t1 = (t0 + 3576U);
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = (t0 + 1048U);
+LAB2:    t2 = (t0 + 2168U);
     t3 = *((char **)t2);
-    t2 = (t0 + 1208U);
+    t2 = (t0 + 1368U);
     t4 = *((char **)t2);
-    t2 = (t0 + 4848);
+    t2 = (t0 + 4320);
     t5 = (t2 + 56U);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
     xsi_vlog_AndGate(t8, 2, t3, t4);
-    t9 = (t0 + 4848);
+    t9 = (t0 + 4320);
     xsi_driver_vfirst_trans(t9, 0, 0);
-    t10 = (t0 + 4656);
+    t10 = (t0 + 4160);
     *((int *)t10) = 1;
 
 LAB1:    return;
 }
 
-static void Gate_32_2(char *t0)
+static void Gate_42_2(char *t0)
 {
     char *t1;
     char *t2;
@@ -120,104 +120,28 @@ LAB0:    t1 = (t0 + 3824U);
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = (t0 + 2168U);
-    t3 = *((char **)t2);
-    t2 = (t0 + 1368U);
-    t4 = *((char **)t2);
-    t2 = (t0 + 4912);
-    t5 = (t2 + 56U);
-    t6 = *((char **)t5);
-    t7 = (t6 + 56U);
-    t8 = *((char **)t7);
-    xsi_vlog_AndGate(t8, 2, t3, t4);
-    t9 = (t0 + 4912);
-    xsi_driver_vfirst_trans(t9, 0, 0);
-    t10 = (t0 + 4672);
-    *((int *)t10) = 1;
-
-LAB1:    return;
-}
-
-static void Gate_35_3(char *t0)
-{
-    char *t1;
-    char *t2;
-    char *t3;
-    char *t4;
-    char *t5;
-    char *t6;
-    char *t7;
-    char *t8;
-    char *t9;
-    char *t10;
-
-LAB0:    t1 = (t0 + 4072U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
-
-LAB3:    goto *t2;
-
 LAB2:    t2 = (t0 + 1848U);
     t3 = *((char **)t2);
     t2 = (t0 + 2008U);
     t4 = *((char **)t2);
-    t2 = (t0 + 4976);
+    t2 = (t0 + 4384);
     t5 = (t2 + 56U);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
     xsi_vlog_OrGate(t8, 2, t3, t4);
-    t9 = (t0 + 4976);
+    t9 = (t0 + 4384);
     xsi_driver_vfirst_trans(t9, 0, 0);
-    t10 = (t0 + 4688);
-    *((int *)t10) = 1;
-
-LAB1:    return;
-}
-
-static void Gate_37_4(char *t0)
-{
-    char *t1;
-    char *t2;
-    char *t3;
-    char *t4;
-    char *t5;
-    char *t6;
-    char *t7;
-    char *t8;
-    char *t9;
-    char *t10;
-
-LAB0:    t1 = (t0 + 4320U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
-
-LAB3:    goto *t2;
-
-LAB2:    t2 = (t0 + 2168U);
-    t3 = *((char **)t2);
-    t2 = (t0 + 1368U);
-    t4 = *((char **)t2);
-    t2 = (t0 + 5040);
-    t5 = (t2 + 56U);
-    t6 = *((char **)t5);
-    t7 = (t6 + 56U);
-    t8 = *((char **)t7);
-    xsi_vlog_XorGate(t8, 2, t3, t4);
-    t9 = (t0 + 5040);
-    xsi_driver_vfirst_trans(t9, 0, 0);
-    t10 = (t0 + 4704);
+    t10 = (t0 + 4176);
     *((int *)t10) = 1;
 
 LAB1:    return;
 }
 
 
-extern void work_m_00000000003676260936_0080321144_init()
+extern void work_m_00000000001790702208_0470473811_init()
 {
-	static char *pe[] = {(void *)Gate_30_0,(void *)Gate_31_1,(void *)Gate_32_2,(void *)Gate_35_3,(void *)Gate_37_4};
-	xsi_register_didat("work_m_00000000003676260936_0080321144", "isim/Add_Sub_4_Structural_Test_isim_beh.exe.sim/work/m_00000000003676260936_0080321144.didat");
+	static char *pe[] = {(void *)Gate_38_0,(void *)Gate_39_1,(void *)Gate_42_2};
+	xsi_register_didat("work_m_00000000001790702208_0470473811", "isim/Multiplier_Test_isim_beh.exe.sim/work/m_00000000001790702208_0470473811.didat");
 	xsi_register_executes(pe);
 }
