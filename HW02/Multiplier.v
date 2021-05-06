@@ -28,13 +28,13 @@ module Multiplier(
 
 	and(win0[0], a[0], b[1]);
 	and(win0[1], a[0], b[2]);
-	and(win0[2], a[0], b[3]);
-	assign win0[3] = 1'b0; 
+	nand(win0[2], a[0], b[3]);
+	assign win0[3] = 1'b1; 
 	
 	and(win1[0], a[1], b[0]);
 	and(win1[1], a[1], b[1]);
 	and(win1[2], a[1], b[2]);
-	and(win1[3], a[1], b[3]);
+	nand(win1[3], a[1], b[3]);
 	
 	// first bit of result
 	and(mul[0], a[0], b[0]);
@@ -55,7 +55,7 @@ module Multiplier(
 	and(win2[0], a[2], b[0]);
 	and(win2[1], a[2], b[1]);
 	and(win2[2], a[2], b[2]);
-	and(win2[3], a[2], b[3]);
+	nand(win2[3], a[2], b[3]);
 	
 	Adder_Universal adder1(
 		.a(win2),
@@ -68,18 +68,28 @@ module Multiplier(
 	assign mul[2] = out2[0];
 	
 	wire [3:0]win3;
-	and(win3[0], a[3], b[0]);
-	and(win3[1], a[3], b[1]);
-	and(win3[2], a[3], b[2]);
+	wire out;
+	reg outtemp;
+	nand(win3[0], a[3], b[0]);
+	nand(win3[1], a[3], b[1]);
+	nand(win3[2], a[3], b[2]);
 	and(win3[3], a[3], b[3]);
 	
 	Adder_Universal adder2(
 		.a(win3),
 		.b(out2[4:1]),
 		.cin(0),
-		.cout(mul[7]),
+		.cout(out),
 		.s(mul[6:3])
 	);
+	
+	FA_Universal_Structural fa0(
+		.a(out),
+		.b(1),
+		.cin(0),
+		.s(mul[7])
+	);
+
 endmodule
 
 module Adder_Universal(

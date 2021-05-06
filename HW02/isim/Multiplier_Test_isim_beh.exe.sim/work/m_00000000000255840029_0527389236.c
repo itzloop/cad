@@ -22,8 +22,9 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/Sina/Documents/ISE Projects/Cad_Team/HW02/Multiplier.v";
-static unsigned int ng1[] = {0U, 0U};
+static unsigned int ng1[] = {1U, 0U};
 static int ng2[] = {0, 0};
+static int ng3[] = {1, 0};
 
 
 
@@ -58,7 +59,7 @@ static void Gate_29_0(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 3968U);
+LAB0:    t1 = (t0 + 4608U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -91,15 +92,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 1);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 9848);
+    t22 = (t0 + 10984);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 9848);
+    t27 = (t0 + 10984);
     xsi_driver_vfirst_trans(t27, 0, 0);
-    t28 = (t0 + 9496);
+    t28 = (t0 + 10632);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -136,7 +137,7 @@ static void Gate_30_1(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 4216U);
+LAB0:    t1 = (t0 + 4856U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -169,15 +170,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 2);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 9912);
+    t22 = (t0 + 11048);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 9912);
+    t27 = (t0 + 11048);
     xsi_driver_vfirst_trans(t27, 1, 1);
-    t28 = (t0 + 9512);
+    t28 = (t0 + 10648);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -214,7 +215,7 @@ static void Gate_31_2(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 4464U);
+LAB0:    t1 = (t0 + 5104U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -247,15 +248,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 3);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 9976);
+    t22 = (t0 + 11112);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
-    xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 9976);
+    xsi_vlog_NandGate(t26, 2, t4, t14);
+    t27 = (t0 + 11112);
     xsi_driver_vfirst_trans(t27, 2, 2);
-    t28 = (t0 + 9528);
+    t28 = (t0 + 10664);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -279,7 +280,7 @@ static void Cont_32_3(char *t0)
     unsigned int t14;
     unsigned int t15;
 
-LAB0:    t1 = (t0 + 4712U);
+LAB0:    t1 = (t0 + 5352U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -288,7 +289,7 @@ LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(32, ng0);
     t2 = ((char*)((ng1)));
-    t3 = (t0 + 10040);
+    t3 = (t0 + 11176);
     t4 = (t3 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -342,7 +343,7 @@ static void Gate_34_4(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 4960U);
+LAB0:    t1 = (t0 + 5600U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -375,15 +376,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 0);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10104);
+    t22 = (t0 + 11240);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10104);
+    t27 = (t0 + 11240);
     xsi_driver_vfirst_trans(t27, 0, 0);
-    t28 = (t0 + 9544);
+    t28 = (t0 + 10680);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -420,7 +421,7 @@ static void Gate_35_5(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 5208U);
+LAB0:    t1 = (t0 + 5848U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -453,15 +454,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 1);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10168);
+    t22 = (t0 + 11304);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10168);
+    t27 = (t0 + 11304);
     xsi_driver_vfirst_trans(t27, 1, 1);
-    t28 = (t0 + 9560);
+    t28 = (t0 + 10696);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -498,7 +499,7 @@ static void Gate_36_6(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 5456U);
+LAB0:    t1 = (t0 + 6096U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -531,15 +532,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 2);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10232);
+    t22 = (t0 + 11368);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10232);
+    t27 = (t0 + 11368);
     xsi_driver_vfirst_trans(t27, 2, 2);
-    t28 = (t0 + 9576);
+    t28 = (t0 + 10712);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -576,7 +577,7 @@ static void Gate_37_7(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 5704U);
+LAB0:    t1 = (t0 + 6344U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -609,15 +610,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 3);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10296);
+    t22 = (t0 + 11432);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
-    xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10296);
+    xsi_vlog_NandGate(t26, 2, t4, t14);
+    t27 = (t0 + 11432);
     xsi_driver_vfirst_trans(t27, 3, 3);
-    t28 = (t0 + 9592);
+    t28 = (t0 + 10728);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -654,7 +655,7 @@ static void Gate_40_8(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 5952U);
+LAB0:    t1 = (t0 + 6592U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -687,15 +688,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 0);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10360);
+    t22 = (t0 + 11496);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10360);
+    t27 = (t0 + 11496);
     xsi_driver_vfirst_trans(t27, 0, 0);
-    t28 = (t0 + 9608);
+    t28 = (t0 + 10744);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -729,7 +730,7 @@ static void Cont_51_9(char *t0)
     unsigned int t24;
     char *t25;
 
-LAB0:    t1 = (t0 + 6200U);
+LAB0:    t1 = (t0 + 6840U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -750,7 +751,7 @@ LAB2:    xsi_set_current_line(51, ng0);
     t10 = (t9 >> 0);
     t11 = (t10 & 1);
     *((unsigned int *)t2) = t11;
-    t12 = (t0 + 10424);
+    t12 = (t0 + 11560);
     t13 = (t12 + 56U);
     t14 = *((char **)t13);
     t15 = (t14 + 56U);
@@ -769,7 +770,7 @@ LAB2:    xsi_set_current_line(51, ng0);
     t24 = *((unsigned int *)t22);
     *((unsigned int *)t22) = (t24 | t18);
     xsi_driver_vfirst_trans(t12, 1, 1);
-    t25 = (t0 + 9624);
+    t25 = (t0 + 10760);
     *((int *)t25) = 1;
 
 LAB1:    return;
@@ -806,7 +807,7 @@ static void Gate_55_10(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 6448U);
+LAB0:    t1 = (t0 + 7088U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -839,15 +840,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 0);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10488);
+    t22 = (t0 + 11624);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10488);
+    t27 = (t0 + 11624);
     xsi_driver_vfirst_trans(t27, 0, 0);
-    t28 = (t0 + 9640);
+    t28 = (t0 + 10776);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -884,7 +885,7 @@ static void Gate_56_11(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 6696U);
+LAB0:    t1 = (t0 + 7336U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -917,15 +918,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 1);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10552);
+    t22 = (t0 + 11688);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10552);
+    t27 = (t0 + 11688);
     xsi_driver_vfirst_trans(t27, 1, 1);
-    t28 = (t0 + 9656);
+    t28 = (t0 + 10792);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -962,7 +963,7 @@ static void Gate_57_12(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 6944U);
+LAB0:    t1 = (t0 + 7584U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -995,15 +996,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 2);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10616);
+    t22 = (t0 + 11752);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10616);
+    t27 = (t0 + 11752);
     xsi_driver_vfirst_trans(t27, 2, 2);
-    t28 = (t0 + 9672);
+    t28 = (t0 + 10808);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -1040,7 +1041,7 @@ static void Gate_58_13(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 7192U);
+LAB0:    t1 = (t0 + 7832U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1073,15 +1074,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 3);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10680);
+    t22 = (t0 + 11816);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
-    xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10680);
+    xsi_vlog_NandGate(t26, 2, t4, t14);
+    t27 = (t0 + 11816);
     xsi_driver_vfirst_trans(t27, 3, 3);
-    t28 = (t0 + 9688);
+    t28 = (t0 + 10824);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -1115,7 +1116,7 @@ static void Cont_68_14(char *t0)
     unsigned int t24;
     char *t25;
 
-LAB0:    t1 = (t0 + 7440U);
+LAB0:    t1 = (t0 + 8080U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1136,7 +1137,7 @@ LAB2:    xsi_set_current_line(68, ng0);
     t10 = (t9 >> 0);
     t11 = (t10 & 1);
     *((unsigned int *)t2) = t11;
-    t12 = (t0 + 10744);
+    t12 = (t0 + 11880);
     t13 = (t12 + 56U);
     t14 = *((char **)t13);
     t15 = (t14 + 56U);
@@ -1155,13 +1156,13 @@ LAB2:    xsi_set_current_line(68, ng0);
     t24 = *((unsigned int *)t22);
     *((unsigned int *)t22) = (t24 | t18);
     xsi_driver_vfirst_trans(t12, 2, 2);
-    t25 = (t0 + 9704);
+    t25 = (t0 + 10840);
     *((int *)t25) = 1;
 
 LAB1:    return;
 }
 
-static void Gate_71_15(char *t0)
+static void Gate_73_15(char *t0)
 {
     char t4[8];
     char t14[8];
@@ -1192,7 +1193,7 @@ static void Gate_71_15(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 7688U);
+LAB0:    t1 = (t0 + 8328U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1225,21 +1226,21 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 0);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10808);
+    t22 = (t0 + 11944);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
-    xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10808);
+    xsi_vlog_NandGate(t26, 2, t4, t14);
+    t27 = (t0 + 11944);
     xsi_driver_vfirst_trans(t27, 0, 0);
-    t28 = (t0 + 9720);
+    t28 = (t0 + 10856);
     *((int *)t28) = 1;
 
 LAB1:    return;
 }
 
-static void Gate_72_16(char *t0)
+static void Gate_74_16(char *t0)
 {
     char t4[8];
     char t14[8];
@@ -1270,7 +1271,7 @@ static void Gate_72_16(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 7936U);
+LAB0:    t1 = (t0 + 8576U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1303,21 +1304,21 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 1);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10872);
+    t22 = (t0 + 12008);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
-    xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10872);
+    xsi_vlog_NandGate(t26, 2, t4, t14);
+    t27 = (t0 + 12008);
     xsi_driver_vfirst_trans(t27, 1, 1);
-    t28 = (t0 + 9736);
+    t28 = (t0 + 10872);
     *((int *)t28) = 1;
 
 LAB1:    return;
 }
 
-static void Gate_73_17(char *t0)
+static void Gate_75_17(char *t0)
 {
     char t4[8];
     char t14[8];
@@ -1348,7 +1349,7 @@ static void Gate_73_17(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 8184U);
+LAB0:    t1 = (t0 + 8824U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1381,21 +1382,21 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 2);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 10936);
+    t22 = (t0 + 12072);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
-    xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 10936);
+    xsi_vlog_NandGate(t26, 2, t4, t14);
+    t27 = (t0 + 12072);
     xsi_driver_vfirst_trans(t27, 2, 2);
-    t28 = (t0 + 9752);
+    t28 = (t0 + 10888);
     *((int *)t28) = 1;
 
 LAB1:    return;
 }
 
-static void Gate_74_18(char *t0)
+static void Gate_76_18(char *t0)
 {
     char t4[8];
     char t14[8];
@@ -1426,7 +1427,7 @@ static void Gate_74_18(char *t0)
     char *t27;
     char *t28;
 
-LAB0:    t1 = (t0 + 8432U);
+LAB0:    t1 = (t0 + 9072U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1459,15 +1460,15 @@ LAB2:    t2 = (t0 + 1048U);
     t20 = (t19 >> 3);
     t21 = (t20 & 1);
     *((unsigned int *)t12) = t21;
-    t22 = (t0 + 11000);
+    t22 = (t0 + 12136);
     t23 = (t22 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     xsi_vlog_AndGate(t26, 2, t4, t14);
-    t27 = (t0 + 11000);
+    t27 = (t0 + 12136);
     xsi_driver_vfirst_trans(t27, 3, 3);
-    t28 = (t0 + 9768);
+    t28 = (t0 + 10904);
     *((int *)t28) = 1;
 
 LAB1:    return;
@@ -1483,7 +1484,7 @@ static void implSig1_execute(char *t0)
     char *t6;
     char *t7;
 
-LAB0:    t1 = (t0 + 8680U);
+LAB0:    t1 = (t0 + 9320U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1491,7 +1492,7 @@ LAB0:    t1 = (t0 + 8680U);
 LAB3:    goto *t2;
 
 LAB2:    t2 = ((char*)((ng2)));
-    t3 = (t0 + 11064);
+    t3 = (t0 + 12200);
     t4 = (t3 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -1512,7 +1513,7 @@ static void implSig2_execute(char *t0)
     char *t6;
     char *t7;
 
-LAB0:    t1 = (t0 + 8928U);
+LAB0:    t1 = (t0 + 9568U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1520,7 +1521,7 @@ LAB0:    t1 = (t0 + 8928U);
 LAB3:    goto *t2;
 
 LAB2:    t2 = ((char*)((ng2)));
-    t3 = (t0 + 11128);
+    t3 = (t0 + 12264);
     t4 = (t3 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -1541,7 +1542,7 @@ static void implSig3_execute(char *t0)
     char *t6;
     char *t7;
 
-LAB0:    t1 = (t0 + 9176U);
+LAB0:    t1 = (t0 + 9816U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -1549,7 +1550,65 @@ LAB0:    t1 = (t0 + 9176U);
 LAB3:    goto *t2;
 
 LAB2:    t2 = ((char*)((ng2)));
-    t3 = (t0 + 11192);
+    t3 = (t0 + 12328);
+    t4 = (t3 + 56U);
+    t5 = *((char **)t4);
+    t6 = (t5 + 56U);
+    t7 = *((char **)t6);
+    memcpy(t7, t2, 8);
+    xsi_driver_vfirst_trans(t3, 0, 31);
+
+LAB1:    return;
+}
+
+static void implSig4_execute(char *t0)
+{
+    char *t1;
+    char *t2;
+    char *t3;
+    char *t4;
+    char *t5;
+    char *t6;
+    char *t7;
+
+LAB0:    t1 = (t0 + 10064U);
+    t2 = *((char **)t1);
+    if (t2 == 0)
+        goto LAB2;
+
+LAB3:    goto *t2;
+
+LAB2:    t2 = ((char*)((ng3)));
+    t3 = (t0 + 12392);
+    t4 = (t3 + 56U);
+    t5 = *((char **)t4);
+    t6 = (t5 + 56U);
+    t7 = *((char **)t6);
+    memcpy(t7, t2, 8);
+    xsi_driver_vfirst_trans(t3, 0, 31);
+
+LAB1:    return;
+}
+
+static void implSig5_execute(char *t0)
+{
+    char *t1;
+    char *t2;
+    char *t3;
+    char *t4;
+    char *t5;
+    char *t6;
+    char *t7;
+
+LAB0:    t1 = (t0 + 10312U);
+    t2 = *((char **)t1);
+    if (t2 == 0)
+        goto LAB2;
+
+LAB3:    goto *t2;
+
+LAB2:    t2 = ((char*)((ng2)));
+    t3 = (t0 + 12456);
     t4 = (t3 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -1561,9 +1620,9 @@ LAB1:    return;
 }
 
 
-extern void work_m_00000000002616526687_0527389236_init()
+extern void work_m_00000000000255840029_0527389236_init()
 {
-	static char *pe[] = {(void *)Gate_29_0,(void *)Gate_30_1,(void *)Gate_31_2,(void *)Cont_32_3,(void *)Gate_34_4,(void *)Gate_35_5,(void *)Gate_36_6,(void *)Gate_37_7,(void *)Gate_40_8,(void *)Cont_51_9,(void *)Gate_55_10,(void *)Gate_56_11,(void *)Gate_57_12,(void *)Gate_58_13,(void *)Cont_68_14,(void *)Gate_71_15,(void *)Gate_72_16,(void *)Gate_73_17,(void *)Gate_74_18,(void *)implSig1_execute,(void *)implSig2_execute,(void *)implSig3_execute};
-	xsi_register_didat("work_m_00000000002616526687_0527389236", "isim/Multiplier_Test_isim_beh.exe.sim/work/m_00000000002616526687_0527389236.didat");
+	static char *pe[] = {(void *)Gate_29_0,(void *)Gate_30_1,(void *)Gate_31_2,(void *)Cont_32_3,(void *)Gate_34_4,(void *)Gate_35_5,(void *)Gate_36_6,(void *)Gate_37_7,(void *)Gate_40_8,(void *)Cont_51_9,(void *)Gate_55_10,(void *)Gate_56_11,(void *)Gate_57_12,(void *)Gate_58_13,(void *)Cont_68_14,(void *)Gate_73_15,(void *)Gate_74_16,(void *)Gate_75_17,(void *)Gate_76_18,(void *)implSig1_execute,(void *)implSig2_execute,(void *)implSig3_execute,(void *)implSig4_execute,(void *)implSig5_execute};
+	xsi_register_didat("work_m_00000000000255840029_0527389236", "isim/Multiplier_Test_isim_beh.exe.sim/work/m_00000000000255840029_0527389236.didat");
 	xsi_register_executes(pe);
 }
