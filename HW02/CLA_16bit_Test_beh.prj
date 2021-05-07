@@ -1,0 +1,4 @@
+verilog work "CLA_4bit.v"
+verilog work "Carry_Look_Ahead_Adder_16bit.v"
+verilog work "CLA_16bit_Test.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
