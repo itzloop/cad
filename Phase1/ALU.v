@@ -50,7 +50,7 @@ module ALU(ALUControl, A, B, Immediate, ALUResult, Zero);
 				ALUResult <= A^B;
 				
 			4'b0101: // LUI
-				ALUResult <= Immediate << 16;
+				ALUResult <= (A & (32'h0000FFFF)) + (B << 16);
 				
 			4'b0110: // SLL
 				ALUResult <= A << (B);
