@@ -67,12 +67,21 @@ module RegistersFile_TB;
 		clk = 1;
 		#100;
 		clk = 0;
+		write_data = 120;
 		// now read reg20 it should output 10 in decimal
 		write_enable = 0;
 		read_reg1 = 5'd20;
 		clk = 1;
 		#100;
 		clk = 0;
+		
+		write_enable = 1;
+		write_reg = 5'd1;
+		read_reg2 = 5'd1;
+		clk = 1;
+		#100;
+		clk = 0;
+		
 		
 		
 		// Add stimulus here
