@@ -19,10 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module ALU(ALUControl, A, B, Immediate, ALUResult, Zero);
+module ALU(ALUControl, A, B, ALUResult, Zero);
 
 	input   [3:0]   ALUControl; // control bits for ALU operation
-	input   [31:0]  A, B, Immediate;	    // inputs
+	input   [31:0]  A, B;	    // inputs
 
 	integer temp,i,x;
 	reg [31:0] y;

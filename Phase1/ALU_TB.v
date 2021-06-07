@@ -28,7 +28,6 @@ module ALU_TB;
 	reg [3:0] ALUControl;
 	reg [31:0] A;
 	reg [31:0] B;
-	reg [31:0] Immediate;
 
 	// Outputs
 	wire [31:0] ALUResult;
@@ -38,8 +37,7 @@ module ALU_TB;
 	ALU uut (
 		.ALUControl(ALUControl), 
 		.A(A), 
-		.B(B), 
-		.Immediate(Immediate), 
+		.B(B),  
 		.ALUResult(ALUResult), 
 		.Zero(Zero)
 	);
@@ -49,7 +47,6 @@ module ALU_TB;
 		ALUControl = 0;
 		A = 0;
 		B = 0;
-		Immediate = 0;
 
 		// Wait 20 ns for global reset to finish
 		#20;
@@ -64,7 +61,6 @@ module ALU_TB;
 		
 		#20;
 		ALUControl= 4'b0101;
-		Immediate = 32'hFFFFFFFF;
 		
 		#50;
 		$stop;
