@@ -19,11 +19,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module ALU(ALUControl, A, B, ALUResult, Zero);
+module ALU(ALUControl, A, B, shamt, ALUResult, Zero);
 
 	input   [3:0]   ALUControl; // control bits for ALU operation
 	input   [31:0]  A, B;	    // inputs
-
+	input	  [4:0] shamt;
 	integer temp,i,x;
 	reg [31:0] y;
 	reg sign;
@@ -53,15 +53,15 @@ module ALU(ALUControl, A, B, ALUResult, Zero);
 				ALUResult <= (A & (32'h0000FFFF)) + (B << 16);
 				
 			4'b0110: // SLL
-				ALUResult <= A << (B);
+				ALUResult <= A << (shamt);
 			
 			
 			4'b0111: // SRL
-				ALUResult <= A >> (B);
+				ALUResult <= A >> (shamt);
 			
 			4'b1000: begin // SRA
 				y = A;
-				for (i = B; i > 0; i = i - 1) begin
+				for (i = shamt; i > 0; i = i - 1) begin
 					y = {y[31],y[31:1]};
 				end
 				ALUResult <= y;
