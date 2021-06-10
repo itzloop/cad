@@ -22,16 +22,18 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/Sina/Documents/ISE Projects/Cad_Team/Phase1/Instruction_Mem.v";
-static int ng1[] = {0, 0};
-static unsigned int ng2[] = {0U, 0U};
-static int ng3[] = {1, 0};
-static const char *ng4 = "instructions";
+static int ng1[] = {4, 0};
+static int ng2[] = {0, 0};
+static unsigned int ng3[] = {0U, 0U};
+static int ng4[] = {1, 0};
+static const char *ng5 = "instructions";
 
 
 
 static void Cont_30_0(char *t0)
 {
     char t5[8];
+    char t14[8];
     char *t1;
     char *t2;
     char *t3;
@@ -44,11 +46,12 @@ static void Cont_30_0(char *t0)
     char *t11;
     char *t12;
     char *t13;
-    char *t14;
     char *t15;
     char *t16;
     char *t17;
     char *t18;
+    char *t19;
+    char *t20;
 
 LAB0:    t1 = (t0 + 2960U);
     t2 = *((char **)t1);
@@ -69,16 +72,19 @@ LAB2:    xsi_set_current_line(30, ng0);
     t11 = *((char **)t10);
     t12 = (t0 + 1320U);
     t13 = *((char **)t12);
-    xsi_vlog_generic_get_array_select_value(t5, 32, t4, t8, t11, 2, 1, t13, 32, 2);
-    t12 = (t0 + 3608);
-    t14 = (t12 + 56U);
-    t15 = *((char **)t14);
+    t12 = ((char*)((ng1)));
+    memset(t14, 0, 8);
+    xsi_vlog_unsigned_divide(t14, 32, t13, 32, t12, 32);
+    xsi_vlog_generic_get_array_select_value(t5, 32, t4, t8, t11, 2, 1, t14, 32, 2);
+    t15 = (t0 + 3608);
     t16 = (t15 + 56U);
     t17 = *((char **)t16);
-    memcpy(t17, t5, 8);
-    xsi_driver_vfirst_trans(t12, 0, 31);
-    t18 = (t0 + 3528);
-    *((int *)t18) = 1;
+    t18 = (t17 + 56U);
+    t19 = *((char **)t18);
+    memcpy(t19, t5, 8);
+    xsi_driver_vfirst_trans(t15, 0, 31);
+    t20 = (t0 + 3528);
+    *((int *)t20) = 1;
 
 LAB1:    return;
 }
@@ -125,7 +131,7 @@ LAB0:    xsi_set_current_line(32, ng0);
 
 LAB2:    xsi_set_current_line(34, ng0);
     xsi_set_current_line(34, ng0);
-    t1 = ((char*)((ng1)));
+    t1 = ((char*)((ng2)));
     t2 = (t0 + 2040);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 32);
 
@@ -147,13 +153,13 @@ LAB3:    t1 = (t0 + 2040);
 
 LAB5:    xsi_set_current_line(38, ng0);
     t1 = (t0 + 1880);
-    xsi_vlogfile_readmemh(ng4, 0, t1, 0, 0, 0, 0);
+    xsi_vlogfile_readmemh(ng5, 0, t1, 0, 0, 0, 0);
 
 LAB1:    return;
 LAB4:    xsi_set_current_line(34, ng0);
 
 LAB6:    xsi_set_current_line(35, ng0);
-    t12 = ((char*)((ng2)));
+    t12 = ((char*)((ng3)));
     t13 = (t0 + 1880);
     t16 = (t0 + 1880);
     t17 = (t16 + 72U);
@@ -179,7 +185,7 @@ LAB8:    xsi_set_current_line(34, ng0);
     t1 = (t0 + 2040);
     t2 = (t1 + 56U);
     t3 = *((char **)t2);
-    t4 = ((char*)((ng3)));
+    t4 = ((char*)((ng4)));
     memset(t6, 0, 8);
     xsi_vlog_signed_add(t6, 32, t3, 32, t4, 32);
     t5 = (t0 + 2040);
