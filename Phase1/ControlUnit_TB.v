@@ -65,6 +65,15 @@ module ControlUnit_TB;
 		#100
 		Opcode = 6'b001000;
 		Func = 6'b000000;
+		#100
+		Opcode = 6'b001100;
+		Func = 6'b000000;
+		#100
+		Opcode = 6'b001000;
+		Func = 6'b000000;
+		#100
+		Opcode = 6'b001000;
+		Func = 6'b000000;
 		// Add stimulus here
 	end
       
