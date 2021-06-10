@@ -27,7 +27,7 @@ module Instruction_Mem(
 	 
 	 reg [mem_cell_size-1:0]mem[mem_size - 1:0];
 	 
-	 assign read_data = mem[address];
+	 assign read_data = mem[address / 4];
 	 integer i;
 	 initial begin
 		

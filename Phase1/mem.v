@@ -31,7 +31,7 @@ parameter mem_cell_size = 32;
 
 reg [mem_cell_size - 1:0]mem[mem_size - 1:0];
 
-assign read_data = mem[address];
+assign read_data = mem[address / 4];
 
 integer i;
 
@@ -46,7 +46,7 @@ end
 always @ ( posedge clk ) begin
 	if ( write_enable ) begin 
 		if ( address < mem_size && address >= 0 ) begin
-			mem[address] <= write_data;
+			mem[address / 4] <= write_data;
 		end
 	end
 end

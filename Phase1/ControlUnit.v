@@ -7,7 +7,7 @@ module Controlunit(input [5:0] Opcode,
                output reg  RegWrite,
 					output reg 	Shift,
 					output reg  MemToReg,
-					output reg  MemWrite
+					output reg  MemWrite,
                output reg  [3:0] ALUControl
                );
                
@@ -28,14 +28,13 @@ always @(*) begin
 							  6'b100110: ALUControl <= 4'b0100;    // XOR
 							  6'b000000: begin
 												ALUControl <= 4'b0110;
-												temp <= 6'101100				// SLL
+												temp <= 6'b101100;			// SLL
 											 end
 							  6'b000010: begin
 												ALUControl <= 4'b0111;	// SRL
-												temp <= 6'101100
+												temp <= 6'b101100;
 											 end
 						  endcase
-						  if Func
 						end
         6'b001000: begin                          // ADDI
                         temp <= 6'b110000;  
