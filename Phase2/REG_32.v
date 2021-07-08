@@ -22,14 +22,17 @@ module REG_32(
 	input clk,
 	input [31:0]inp,
 	input reset,
+	input write,
 	output reg [31:0]q
     );
-
-	always @ ( posedge clk ) begin 
-		if (reset) q <= 0;
-		else q <= inp;
-	
+	initial begin
+		q = 0;
 	end
-
+	always @ ( posedge clk ) begin 
+		if (reset)
+			q <= 0;
+		else if(write)
+			q <= inp;
+	end
 
 endmodule

@@ -46,9 +46,7 @@ module mem(
 	// initialize the memory
 	
 	initial begin 
-		for ( i = 0; i < mem_size; i = i + 1 ) begin
-			mem[i] = 32'd0;
-		end
+			$readmemh(filename, mem);
 	end
 	
 	always @(posedge clk) begin
