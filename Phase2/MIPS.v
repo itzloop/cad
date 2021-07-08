@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-`include "mem.v"
+//`include "mem.v"
 `include "ControlUnit.v"
 `include "PC.v"
 `include "Adder_32.v"
