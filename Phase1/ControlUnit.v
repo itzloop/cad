@@ -18,14 +18,28 @@ always @(*) begin
 
     case (Opcode) 
         6'b000000: begin                          // R-type
-                    temp <= 6'b101000;        
-
                     case (Func)
-							  6'b100000: ALUControl <= 4'b0000;    // ADD 
-							  6'b100010: ALUControl <= 4'b0001;    // SUB
-							  6'b100100: ALUControl <= 4'b0010;    // AND
-							  6'b100101: ALUControl <= 4'b0011;    // OR
-							  6'b100110: ALUControl <= 4'b0100;    // XOR
+							  6'b100000: begin 
+												ALUControl <= 4'b0000;    // ADD 
+												temp <= 6'b101000;
+											 end
+							  6'b100010: begin
+												ALUControl <= 4'b0001;    // SUB
+												temp <= 6'b101000;
+											 end
+							  6'b100100: begin 
+												ALUControl <= 4'b0010;    // AND
+												temp <= 6'b101000;
+											 end
+							  6'b100101: begin
+												ALUControl <= 4'b0011;    // OR
+												temp <= 6'b101000;
+											 end
+											 
+							  6'b100110: begin 
+												ALUControl <= 4'b0100;    // XOR
+												temp <= 6'b101000;
+											 end
 							  6'b000000: begin
 												ALUControl <= 4'b0110;
 												temp <= 6'b101100;			// SLL
@@ -60,11 +74,11 @@ always @(*) begin
                         temp <= 6'b110000;  
                         ALUControl <= 4'b0101; 
                     end          
-		  6'b001111:  begin                         // LW
+		  6'b100011:  begin                         // LW
                         temp <= 6'b110010;  
                         ALUControl <= 4'b0000; 
                     end
-		  6'b001111:  begin                         // SW
+		  6'b101011:  begin                         // SW
                         temp <= 6'b010011;  
                         ALUControl <= 4'b0000; 
                     end
