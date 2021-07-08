@@ -21,7 +21,7 @@
 // Additional Comments:
 // 
 ////////////////////////////////////////////////////////////////////////////////
-
+`include "RegistersFile.v"
 module RegistersFile_TB;
 
 	// Inputs
@@ -30,9 +30,9 @@ module RegistersFile_TB;
 	reg [4:0] read_reg1;
 	reg [4:0] read_reg2;
 	reg [4:0] write_reg;
-
-	// Outputs
 	reg [31:0] write_data;
+	// Outputs
+	
 	wire [31:0] read_data1;
 	wire [31:0] read_data2;
 
@@ -56,7 +56,7 @@ module RegistersFile_TB;
 		read_reg1 = 0;
 		read_reg2 = 0;
 		write_reg = 0;
-		
+		write_data=0;
 		// Wait 100 ns for global reset to finish
 		#100;
       

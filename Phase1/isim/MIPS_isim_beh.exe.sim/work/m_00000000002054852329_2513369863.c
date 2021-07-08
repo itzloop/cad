@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0x8ef4fb42 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Sina/Documents/ISE Projects/Cad_Team/Phase1/Adder_32.v";
+static const char *ng0 = "D:/University/CAD/cad/Phase1/Adder_32.v";
 
 
 
@@ -61,7 +61,7 @@ static void Cont_53_0(char *t0)
     unsigned int t32;
     char *t33;
 
-LAB0:    t1 = (t0 + 2848U);
+LAB0:    t1 = (t0 + 1628U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -69,20 +69,20 @@ LAB0:    t1 = (t0 + 2848U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(53, ng0);
-    t2 = (t0 + 1048U);
+    t2 = (t0 + 600U);
     t3 = *((char **)t2);
-    t2 = (t0 + 1208U);
+    t2 = (t0 + 692U);
     t4 = *((char **)t2);
     memset(t5, 0, 8);
     xsi_vlog_unsigned_add(t5, 2, t3, 1, t4, 1);
-    t2 = (t0 + 1368U);
+    t2 = (t0 + 784U);
     t6 = *((char **)t2);
     memset(t7, 0, 8);
     xsi_vlog_unsigned_add(t7, 2, t5, 2, t6, 1);
-    t2 = (t0 + 3312);
-    t8 = (t2 + 56U);
+    t2 = (t0 + 1904);
+    t8 = (t2 + 32U);
     t9 = *((char **)t8);
-    t10 = (t9 + 56U);
+    t10 = (t9 + 40U);
     t11 = *((char **)t10);
     memset(t11, 0, 8);
     t12 = 1U;
@@ -98,10 +98,10 @@ LAB2:    xsi_set_current_line(53, ng0);
     t19 = *((unsigned int *)t17);
     *((unsigned int *)t17) = (t19 | t13);
     xsi_driver_vfirst_trans(t2, 0, 0);
-    t20 = (t0 + 3248);
-    t21 = (t20 + 56U);
+    t20 = (t0 + 1868);
+    t21 = (t20 + 32U);
     t22 = *((char **)t21);
-    t23 = (t22 + 56U);
+    t23 = (t22 + 40U);
     t24 = *((char **)t23);
     memset(t24, 0, 8);
     t25 = 2U;
@@ -119,7 +119,7 @@ LAB2:    xsi_set_current_line(53, ng0);
     t32 = *((unsigned int *)t30);
     *((unsigned int *)t30) = (t32 | t26);
     xsi_driver_vfirst_trans(t20, 0, 0);
-    t33 = (t0 + 3168);
+    t33 = (t0 + 1824);
     *((int *)t33) = 1;
 
 LAB1:    return;
@@ -129,6 +129,6 @@ LAB1:    return;
 extern void work_m_00000000002054852329_2513369863_init()
 {
 	static char *pe[] = {(void *)Cont_53_0};
-	xsi_register_didat("work_m_00000000002054852329_2513369863", "isim/Adder_32_isim_beh.exe.sim/work/m_00000000002054852329_2513369863.didat");
+	xsi_register_didat("work_m_00000000002054852329_2513369863", "isim/MIPS_isim_beh.exe.sim/work/m_00000000002054852329_2513369863.didat");
 	xsi_register_executes(pe);
 }

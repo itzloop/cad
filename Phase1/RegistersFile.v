@@ -24,7 +24,7 @@ module RegistersFile(
     input [4:0]read_reg1,
     input [4:0]read_reg2,
     input [4:0]write_reg,
-    output [31:0]write_data,
+    input [31:0]write_data,
     output [31:0]read_data1,
     output [31:0]read_data2
     );

@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   21:49:17 06/07/2021
-// Design Name:   Mux2_1
-// Module Name:   C:/Users/Sina/Documents/ISE Projects/Cad_Team/Phase1/Mux2_1_TB.v
+// Create Date:   16:05:44 06/13/2021
+// Design Name:   MIPS
+// Module Name:   D:/UNI/CAD/Repository/cad/Phase1/MIPS_TB.v
 // Project Name:  Phase1
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: Mux2_1
+// Verilog Test Fixture created by ISE for module: MIPS
 //
 // Dependencies:
 // 
@@ -21,37 +21,32 @@
 // Additional Comments:
 // 
 ////////////////////////////////////////////////////////////////////////////////
-`include "MUX2_1.v"
-module Mux2_1_TB;
+
+module MIPS_TB;
 
 	// Inputs
-	reg [31:0] a;
-	reg [31:0] b;
-	reg s;
-
-	// Outputs
-	wire [31:0] out;
+	reg clk;
+	reg reset;
 
 	// Instantiate the Unit Under Test (UUT)
-	Mux2_1 uut (
-		.a(a), 
-		.b(b), 
-		.out(out), 
-		.s(s)
+	MIPS uut (
+		.clk(clk), 
+		.reset(reset)
 	);
+	always #50 clk=!clk;
 
 	initial begin
 		// Initialize Inputs
-		a = 0;
-		b = 12;
-		s = 0;
+		clk = 0;
+		reset = 1;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-		
-		s = 1; // out should be 12 here
-		#100;
-		
+		repeat(10) begin
+			reset=0;
+			#100;
+      end
+      $finish;
         
 		// Add stimulus here
 
